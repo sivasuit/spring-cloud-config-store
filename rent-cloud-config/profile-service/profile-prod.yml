@@ -1,2 +1,12 @@
 server:
   port: 9191
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/rentDB?serverTimezone=Asia/Singapore&createDatabaseIfNotExist=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
